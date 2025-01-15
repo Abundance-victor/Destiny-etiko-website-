@@ -1,0 +1,476 @@
+/* File: style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: #d9534f;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.portfolio-grid img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+header.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-buttons a {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #d9534f;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero-buttons a:hover {
+    background: #c9302c;
+}
+
+main section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-grid img {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+    border-color: #d9534f;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/* Add these to style.css */
+header.about-header {
+    background: #d9534f;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.bio-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.bio-content h2 {
+    color: #d9534f;
+}
+
+.achievements ul {
+    list-style: disc;
+    margin: 20px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.achievements li {
+    margin-bottom: 10px;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #c9302c;
+}
+/* Add these styles to style.css */
+.videos-section {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.video-item p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.download-button:hover {
+    background-color: #d12836;
+}
+/* Add this to your style.css */
+.movie-grid img,
+.video-container img {
+    width: 100%; /* Make the image adapt to the container width */
+    max-width: 300px; /* Set a maximum width for better scaling */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin: 10px auto; /* Centers the image within its container */
+    display: block; /* Ensures proper spacing */
+}
+
+.video-item video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.movie-grid, 
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Makes the items wrap to the next line if needed */
+    justify-content: center; /* Centers all items within the container */
+    gap: 20px; /* Adds space between items */
+}
+
+.movie-item, 
+.video-item {
+    text-align: center; /* Centers text under the image */
+    max-width: 300px; /* Limits the container's width */
+}
+
+.movie-item img, 
+.video-item img {
+    max-width: 100%;
+    height: auto;
+}
+.fans-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.fans-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.fan-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.fan-images img {
+    max-width: 300px; /* Adjust the maximum width of each image */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* CSS for the monologue section */
+.monologue-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.monologue-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hover-caption {
+  font-size: 1.2em;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-caption:hover {
+  color: #d93025;
+  transform: scale(1.1);
+}
+/* Feedback Section */
+.feedback-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.feedback-section h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.feedback-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.feedback-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.feedback-form button {
+  display: block;
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 2s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+}
+/* General Button Hover */
+button:hover, 
+.feedback-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Link Hover */
+a:hover {
+  color: #ff4500;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Image Hover */
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover (Portfolio Images, Comments, etc.) */
+.card:hover,
+.feedback-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Submit Button (Specific) */
+.feedback-form button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
+/* H2 Headings Hover Effect */
+h2:hover {
+  color: #ff4500;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Links Hover (if any) */
+nav a:hover {
+  color: #4caf50;
+  border-bottom: 2px solid #4caf50;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Feedback Form Input Fields Focus */
+input:focus, 
+textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Footer Hover Effect */
+.footer:hover {
+  background-color: #444;
+  transition: background-color 0.3s ease;
+}
+
+/* Overall Smooth Transition for All Elements */
+* {
+  transition: all 0.3s ease-in-out;
+}
